@@ -11,20 +11,27 @@
      <main>
         <div class="taskbar">
             <div class="weatherDescription">
-                <div class="icon" id="global"><i class="ri-global-fill"></i></div>
-                <div class="weather" id="weather">
-                    <div class="icon" id="degree">17 degree</div>
-                    <div class="icon" id="weatherDescription">Mostly clear</div>
+                <div id="global" class="icon"><i class="ri-global-fill"></i></div>
+                <div class="weather icon" id="weather">
+                    <p id="degree"></p>
+                    <p id="weatherDescription"></p>
                 </div>
             </div>
             <div class="icons">
-                <div class="icon" id="windows"><i class="ri-microsoft-fill"></i></div>
+                <div class="startWrapper">
+                    <div class="icon" id="windows"><i class="ri-microsoft-fill"></i></div>
+
+                    <div class="PopUp" id="startPopup">
+                        
+                    </div>
+                </div>
+                <!-- <div class="icon" id="windows"><i class="ri-microsoft-fill"></i></div> -->
                 <div class="icon" id="search"><i class="ri-menu-search-fill"></i></div>
                 <div class="icon" id="explorer"><i class="ri-folder-6-fill"></i></div>
                 <div class="icon" id="chrome"><i class="ri-chrome-fill"></i></div>
                 <div class="icon" id="google"><i class="ri-google-fill"></i></div>
-                <div class="icon" id="google"><i class="ri-todo-line"></i></div>
-                <div class="icon" id="google"><i class="ri-settings-4-fill"></i></div>
+                <div class="icon" id="todo"><i class="ri-todo-line"></i></div>
+                <div class="icon" id="settings"><i class="ri-settings-4-fill"></i></div>
             </div>
             <div class="systemTray">
                 <div class="icon" id="upArrow"><i class="ri-arrow-drop-up-line"></i></div>
@@ -34,9 +41,45 @@
                     <div class="icon" id="volume"><i class="ri-volume-up-line"></i></div>
                     <div class="icon" id="battery"><i class="ri-battery-fill"></i></div>
                 </div>
-                <div class="systemDateTime">
-                    <div class="icon" id="date">22:11</div>
-                    <div class="icon" id="time">02-02-2026</div>
+                <div class="systemDateTime icon">
+                    <div id="time">22:11</div>
+                    <div id="date">02-02-2026</div>
+                </div>
+            </div>
+        </div>
+        <div class="rightClick">
+            <div class="rows">
+                <div class="row" id="view">
+                    <div class="icon"><i class="ri-gallery-view-2"></i></div>
+                    <h5>View</h5>
+                </div>
+                <div class="row" id="sortby">
+                    <div class="icon"><i class="ri-dropdown-list"></i></div>
+                    <h5>Sort by</h5>
+                </div>
+                <div class="row" id="refresh">
+                    <div class="icon"><i class="ri-refresh-line"></i></div>
+                    <h5>Refresh</h5>
+                </div>
+                 <div class="row" id="new">
+                    <div class="icon"><i class="ri-add-circle-line"></i></div>
+                    <h5>New</h5>
+                </div>
+                <div class="row" id="displaySettings">
+                    <div class="icon"><i class="ri-settings-4-line"></i></div>
+                    <h5>Display Settings</h5>
+                </div>
+                <div class="row" id="personalize">
+                    <div class="icon"><i class="ri-pencil-ai-2-line"></i></div>
+                    <h5>Personalize</h5>
+                </div>
+                <div class="row" id="terminal">
+                    <div class="icon"><i class="ri-terminal-box-line"></i></div>
+                    <h5>Open in terminal</h5>
+                </div>
+                <div class="row" id="moreOptions">
+                    <div class="icon"><i class="ri-menu-fill"></i></div>
+                    <h5>Show more options</h5>
                 </div>
             </div>
         </div>
