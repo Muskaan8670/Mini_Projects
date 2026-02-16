@@ -1,0 +1,112 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@keyframes fall {
+  to {
+    transform: translateY(110vh) rotate(360deg);
+    opacity: 0;
+  }
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+  background-color: #EFC1AD;
+}
+html .confetti,
+body .confetti {
+  position: fixed;
+  top: -10px;
+  font-size: 20px;
+  animation: fall 3s linear forwards;
+  font-size: 25px;
+}
+
+main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+main .envelop {
+  opacity: 1;
+  height: 400px;
+  width: 600px;
+  background-color: #A694D6;
+  border-radius: 15px;
+  position: relative;
+  top: 25%;
+}
+main .envelop .bigTriangle {
+  height: 400px;
+  width: 600px;
+  background-color: #B8A6E3;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  clip-path: polygon(100% 0, 0 100%, 100% 100%);
+  position: absolute;
+  bottom: 0;
+}
+main .envelop .smallTriangle {
+  height: 400px;
+  width: 600px;
+  background-color: #C9BDF0;
+  border-bottom-left-radius: 15px;
+  clip-path: polygon(0 0, 0 100%, 54% 46%);
+  position: absolute;
+  bottom: 0;
+}
+main .envelop .stamp {
+  height: 150px;
+  width: 150px;
+  position: absolute;
+  rotate: -25deg;
+  opacity: 1;
+  left: 50%;
+  top: 50%;
+  transform: translate(-5%, -65%);
+}
+main .envelop .stamp img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .envelop .message {
+  height: 350px;
+  width: 550px;
+  background-color: #e3def5;
+  border-radius: 15px;
+  position: absolute;
+  bottom: 5%;
+  opacity: 0;
+  rotate: -3deg;
+  left: 4%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .envelop .message #typedText {
+  width: 70%;
+  height: 40%;
+}
+main .replay {
+  opacity: 0;
+}
+main .replay button {
+  position: absolute;
+  bottom: 8%;
+  left: 46%;
+  color: #6d53b6;
+  background-color: rgba(109, 83, 182, 0.1137254902);
+  border: 2px solid #6d53b6;
+  padding: 10px 15px;
+  border-radius: 10px;
+  font-size: 14px;
+}
+main .replay button:active {
+  scale: 0.95;
+}/*# sourceMappingURL=birthday.css.map */
