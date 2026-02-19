@@ -14,7 +14,7 @@ html,
 body {
   width: 100%;
   height: 100%;
-  background-color: #EFC1AD;
+  background: linear-gradient(135deg, #fbc2eb, #a6c1ee);
 }
 html .confetti,
 body .confetti {
@@ -39,6 +39,20 @@ main .envelop {
   border-radius: 15px;
   position: relative;
   top: 25%;
+  transition: all 0.4s ease;
+}
+main .envelop .message {
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+main .envelop .message.show {
+  opacity: 1;
+}
+main .envelop .stamp {
+  transition: transform 0.7s ease;
+}
+main .envelop .stamp.move {
+  transform: translate(-55%, 5%);
 }
 main .envelop .bigTriangle {
   height: 400px;
@@ -68,6 +82,7 @@ main .envelop .stamp {
   left: 50%;
   top: 50%;
   transform: translate(-5%, -65%);
+  transition: transform 0.7s ease;
 }
 main .envelop .stamp img {
   height: 100%;
@@ -88,6 +103,7 @@ main .envelop .message {
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: opacity 1.2s ease;
 }
 main .envelop .message #typedText {
   width: 70%;
